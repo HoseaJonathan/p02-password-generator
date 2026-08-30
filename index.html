@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" id="generatePassword">
+            <p>Feel free to mess arond with the option!</p>
+            <div class="checkGroup">
+                <input type="checkbox" id="lowerOption">
+                <label for="lowerOption">Lowercase</label>
+            </div>
+
+            <div class="checkGroup">
+                <input type="checkbox" id="upperOption">
+                <label for="upperOption">Uppercase</label>
+            </div>
+
+            <div class="checkGroup">
+                <input type="checkbox" id="numberOption">
+                <label for="numberOption">Number</label>
+            </div>
+
+            <div class="checkGroup">
+                <input type="checkbox" id="symbolOption">
+                <label for="symbolOption">Symbols
+                </label>
+            </div>
+
+            <button type="submit">Generate Password</button>
+            <p id="result" class="hidden"></p>
+        </form>
+        
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

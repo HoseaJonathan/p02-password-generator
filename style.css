@@ -1,0 +1,49 @@
+:root {
+    --bg-page: #F6F8F7;
+    --bg-card: #FFFFFF;
+    --bg-input: #F2F5F3;
+
+    --text-main: #2F3A35;
+    --text-muted: #7A8780;
+
+    --border-main: #D9E1DC;
+
+    --accent: #7FA68C;
+    --accent-hover: #6B9178;
+
+    --danger: #D97878;
+}
+body{
+    display: flex;
+    background-color: var(--bg-page);
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: var(--bg-card);
+    border: 2px solid var(--border-main);
+    border-radius: 6px;
+    padding: 4px 10px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label{
+    color: var(--text-muted);;
+}
+
+
+
+
+
+
