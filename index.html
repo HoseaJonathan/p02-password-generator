@@ -3,39 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Password Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <form action="" id="generatePassword">
-            <p>Feel free to mess arond with the option!</p>
+            <p id="description">Feel free to mess around with the option!</p>
             <div class="checkGroup">
-                <input type="checkbox" id="lowerOption">
+                <input type="checkbox" id="lowerOption" name="settings" value="abcdefghijklmnopqrstuvwxyz">
                 <label for="lowerOption">Lowercase</label>
             </div>
 
             <div class="checkGroup">
-                <input type="checkbox" id="upperOption">
+                <input type="checkbox" id="upperOption" name="settings" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">
                 <label for="upperOption">Uppercase</label>
             </div>
 
             <div class="checkGroup">
-                <input type="checkbox" id="numberOption">
+                <input type="checkbox" id="numberOption" name="settings" value= "1234567890">
                 <label for="numberOption">Number</label>
             </div>
 
             <div class="checkGroup">
-                <input type="checkbox" id="symbolOption">
+                <input type="checkbox" id="symbolOption" name="settings" value="!@#$%^&*">
                 <label for="symbolOption">Symbols
                 </label>
             </div>
 
+            <label for="passwordLength">Length: <span id = lengthValue>12<spa/label>
+            <input 
+            type="range"
+            id="passwordLength"
+            min="4"
+            max="32"
+            value="12">
             <button type="submit">Generate Password</button>
-            <p id="result" class="hidden"></p>
         </form>
         
-
+        <p id="result" class="hidden"></p>
+        <button type="button" id = "copyButton">Copy Text</button>
     </div>
 
     <script src="script.js"></script>
